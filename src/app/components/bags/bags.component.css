@@ -1,0 +1,219 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color:#EFF1F5;
+    }
+
+
+    #card_body{
+        width: 670px;
+        height: 100%;
+        position: relative;
+        margin-top: 40px;
+        left:135px;
+      }
+
+
+    #activity_body{
+          top: 120px;
+          position: absolute;
+          left: 840px;
+          width: 340px;
+          height: 100%;
+      }
+
+      #banner_body{
+        position: relative;
+        width: 102%;
+        height: 300px;
+    }
+
+
+
+/* for card1 body element */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 6px;
+}
+/* Create four equal columns1 that floats next to each other */
+.column1 {
+  float: left;
+  width: 25%;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+/* for card body element */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 6px;
+  }
+    .card button:hover {
+      opacity: 0.7;
+    }
+  
+    .row {
+      margin: 8px -16px;
+    }
+  
+    /* Add padding BETWEEN each column */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
+  
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      margin: 1%;
+    }
+  
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+  
+  
+    /* product icon pic` design in card */
+    #card_pic{
+      position: absolute;
+      top: 55px;
+      left:20px;
+    }
+  
+     /* product product_from_text` design in card */
+     #product_from_text{
+      position: absolute;
+      top: 53px;
+      left:65px;
+      font-size: 12px;
+      color: #97A5B2;
+    }
+
+  /* product_from_name design in card */
+  #product_from_name{
+    position: absolute;
+    top: 68px;
+    font-weight: bold;
+    left:65px;
+    font-size: 18px;
+    color: #254059;
+  }
+
+ /* product quantity change design in card */
+ #pro_quant{
+  position: absolute;
+  top: 20px;
+  font-weight: bold;
+  right:60px;
+  font-size: 16px;
+  color: #3C3C3C;
+}
+
+    /* product name design in card */
+    #product_name{
+      position: absolute;
+      top: 20px;
+      font-weight: bold;
+      left:20px;
+      margin-right: 10px;
+      font-size: 16px;
+      color: #254059;
+      line-height: 15px;
+    }
+
+/* product name design in card */
+#product_name_down{
+  margin-top: 10px;
+  font-weight: bold;
+  margin-left:10px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #254059;
+  line-height: 15px;
+}
+
+    /* product cost` design in card */
+    #product_cost{
+      position: absolute;
+      bottom: 7px;
+      right: 78px;
+      margin-right: 10px;
+      font-size: 17px;
+      color: #E63689;
+    }
+
+    /* product subcost` design in card */
+    #product_subcost{
+      position: absolute;
+      bottom: 8px;
+      right:20px;
+      margin-right: 10px;
+      font-size: 14px;
+      color: #97A5B2;
+    }
+
+     /* product cost` design in card */
+     #product_cost_down{
+      margin-left: 10px;
+      font-size: 17px;
+      color: #E63689;
+    }
+
+    /* product subcost` design in card */
+    #product_subcost_down{
+      margin-left: 70px;
+      margin-top: -34px;
+      font-size: 14px;
+      color: #97A5B2;
+    }
+
+   /* image banner on card view */
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+      right: 105px;
+      width: 20px;
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #254059;
+      left: 30px;
+      font-size: 10px;
+      font: bold;
+    }
+    
+    /* button on product card */
+    .btn-blue{
+      border: 1px solid #E1E4ED;
+      border-radius: 5px;
+      border-style: dashed;
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 15px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  
+  .btn{
+      width: fit-content;
+      height:35px;
+  }

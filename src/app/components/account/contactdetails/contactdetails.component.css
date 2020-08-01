@@ -1,0 +1,76 @@
+.test-body {
+    padding-top: 60px;
+    display:flex;
+    margin: 0px;
+}
+.container {
+    margin-top: 33px;
+    margin-left: 73px;
+    flex:1;
+    color: #254059;
+    padding: 0px;
+}
+h2  {
+    font-size: 18px;
+}
+._moveleft {
+    float:left;
+}
+._moveright {
+    float:right;
+    margin-right: 207px;
+    cursor:pointer;
+}
+.styl {
+    font-size: 12px;
+    color: #97A5B2;
+    font: Light 12px/15px Sofia Pro;
+    padding-left: 12px;
+}
+._moveright .btn {
+    font-size: 13px;
+    background: #6011F5 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+.disp .btn {
+    background-color: #FFFFFF;
+    border: 1px solid #6011F5;
+    border-radius: 3px;
+    color:#6011f5;
+    font-size: 12px;
+    width: 270px;
+    height: 33px;
+    margin-top:20px;
+}
+.disp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin-top: 61px;
+}
+.disp div {
+    background-color: #FFFFFF;
+    width: 310px;
+    height: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    padding:20px;  
+    box-shadow: 0px 1px 0px #D9D9D9;
+    border-radius: 3px; 
+}
+.disp .contact {
+    display: block-inline;
+    float: left;
+    height: 57px;
+    width: 239px;
+    padding: 0px;
+    margin: 0px;
+    border:none;
+    box-shadow: none;
+}
+.rightcorner {
+    float: right;
+    opacity: 0.54;
+    margin-top: -10px;
+}

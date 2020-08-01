@@ -1,0 +1,80 @@
+<body>
+    <app-navigationclass></app-navigationclass>
+
+    <div id="banner_body"> 
+        <div class="container_banner">
+            <img src="assets/banner_back.png" alt="Random first slide" style="height:100%; width: 100%;">
+            <div class="top-right">
+                <img  [src]="images[0]" id="img_0">
+                <img  [src]="images[1]" id="img_1">
+                <img  [src]="images[2]" id="img_2">
+            </div>
+        </div>
+        <div class="lines">
+            <p style="font-size: 25px;line-height: 30px;font-weight: 600;">3 Exclusive Products.</p>
+            <p style="margin-top:0px;font-size: 15px;">Join now to experience more!</p>
+         </div>
+    </div>
+    
+    <div id="card_body">
+        <p id="statement">Upcoming events from Zoella Zeebo</p>
+        <div class="column card" style="height:260px;width:240px;"  *ngFor="let cardimage of cardimages" >
+            <img  [src]="cardimage.img" style="width:100%;height:160px" />
+            <div class="container">
+              <img  src="assets/banner.png" style="width:30px;height:65px;" />
+              <div class="centered"><b>06<br>june</b><br>Sat</div>
+            </div>
+            <p id="product_name"><b>{{cardimage.name}}</b></p>
+            <p id="product_time">12:00 pm - 01:00 pm</p>
+            <!-- <img  src="assets/pic.png" style="width:20px;height:20px;" id="card_pic" />
+            <p id="product_influ">By Zella Zebbo</p> -->
+            <!-- <button  (click)="onSubmit()" type="submit" class="btn btn-blue"><b>Add To Calendar</b> <img  src="assets/blue_arrow.png" style="width:25px;height:15px;position: absolute;right: 20px;bottom: 15px;" /></button> -->
+            <button   type="submit" class="btn btn-blue"><b>Register</b> <img  src="assets/blue_arrow.png" style="width:25px;height:15px;position: absolute;right: 20px;bottom: 15px;" /></button>
+        </div>
+    </div>
+    
+    
+    <div id="activity_body">
+        <img  src="assets/arrow.png" id="arrow" (click)="goUpcoming()"/>
+        <p style="position: absolute;top:35px;color: #254059;font-size: 25px;font-weight: 700;" >M&S Exclusive Highlighs</p>
+        <p style="position: absolute;top:65px;color: #254059;font-size: 17px;" >With <b>Zella Zebbo</b></p>
+        <img  src="assets/youtube_icon.png" style="width: 16px;height: 12px;position: absolute;top:106px;" />
+        <p style="position: absolute;top:100px;left: 20px;color: #8395A5;font-size: 15px;" >Streaming in <b style="color: #254059;">Youtube</b></p>
+        <p style="position: absolute;top:135px;color: #254059;font-size: 17px;" ><b>June 5, Friday</b></p>
+        <p style="position: absolute;top:155px;color: #254059;font-size: 17px;" ><b>08:00 pm - 09:30 pm</b></p>
+        <button  (click)="onSubmit()" type="submit" class="btnG btn-green"><b>Added To Calendar</b> <img  src="assets/white_arrow.png" style="width:25px;height:15px;position: absolute;right: 20px;bottom: 15px;" /></button>
+        <!-- <button  (click)="onSubmit()" type="submit" class="btnW btn-white"><b>Add To Calendar</b> <img  src="assets/white_arrow.png" style="width:25px;height:15px;position: absolute;right: 20px;bottom: 15px;" /></button> -->
+        <button  (click)="onSubmit()" type="submit" class="btnW btn-white"><b>Register</b> <img  src="assets/white_arrow.png" style="width:25px;height:15px;position: absolute;right: 20px;bottom: 15px;" /></button>
+
+        <div class="card" id="about">
+            <p style="letter-spacing: 0px;color: #8395A5;font-size: 12px;">About the Influencer</p>
+            <img  src="assets/pic.png" style="width:20px;height:20px;" id="about_card_pic" /> 
+            <p style="letter-spacing: 0px;color: #254059;font-size: 15px;left:30px;top: -20px;position: relative;"><b>Zoella Zeebo</b></p>
+            <button  (click)="onSubmit()" type="submit" class="btnAbout btn-about">Follow</button>
+            <p style="line-height: 23px;color: #254059;font-size: 14px;margin-top:-10px;">Zoella Zeebo, also known as Zoe Sugg, is a highly prolific fashion and beauty influencer across a wide range of social media. She created her fashion, beauty and lifestyle blog in 2009. She expanded this into a YouTube channel later that year while she was working for British clothing retailer, New Look… <b style="color:#6011F5 ;">Read more</b></p>
+        </div>
+
+        <div class="card" id="attend">
+            <p style="letter-spacing: 0px;color: #8395A5;font-size: 14px;">Who can attend?</p>
+            <p style="line-height: 20px;color: #254059;font-size: 14px;margin-top:-5px;">Any one can join from anywhere. There is no age limits.</p> 
+        </div>
+
+        <div class="card" id="works">
+            <p style="letter-spacing: 0px;color: #8395A5;font-size: 14px;">How it works?</p>
+            <img  src="assets/work_calendar.png" style="width:30px;height:25px;position: relative;left: 0px;top:5px" >
+            <img  src="assets/work_web.png" style="width:30px;height:25px;position: relative;left: 0px;top:25px" >
+            <img  src="assets/work_video.png" style="width:30px;height:25px;position: relative;left: 0px;top:45px" >
+            <img  src="assets/work_radio.png" style="width:30px;height:25px;position: relative;left: 0px;top:65px" >
+
+            <p style="line-height: 15px;color: #254059;font-size: 15px;margin-top: -95px;margin-left: 40px;">Join for a Live session and Add to calendar</p>
+            <p style="line-height: 15px;color: #254059;font-size: 15px;margin-top: 2px;margin-left: 40px;">Open the app/web and join the session at least 2 minutes prior to the start time</p>
+            <p style="line-height: 15px;color: #254059;font-size: 15px;margin-top: 5px;margin-left: 40px;">Voila! Now enjoy the awesome LIVE experience</p>
+            <p style="line-height: 15px;color: #254059;font-size: 15px;margin-top: 0px;margin-left: 40px;">Buy the products from the live streaming</p>
+        </div>
+    
+    
+    
+    </div>
+
+
+</body>

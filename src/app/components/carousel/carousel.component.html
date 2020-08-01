@@ -1,0 +1,71 @@
+<div id="carosal_div" >
+
+    <div class="gallery carousel" [flickity]='{ "freeScroll": true, "wrapAround": true,"autoPlay": true }'>
+
+
+  <div style="background-color: #1195F5;border-radius: 6px;" class="gallery-cell">
+    <div class="container">
+       <img [src]="covers[0]" alt="Random first slide" style="height:250px; width: 110%;position: relative;left: -15px;">
+       <div class="top-right">
+         <div ng-if="(cards[0].product_images[2])">
+          <img src="{{base}}{{cards[0].product_images[2]}}" id="img_0">
+         </div>
+        <img  src="{{base}}{{cards[0].product_images[1]}}" id="img_1">
+        <img  src="{{base}}{{cards[0].product_images[0]}}" id="img_2">
+       </div>
+    </div>
+    <div class="lines">
+       <span class="dot"></span>
+       <p style="margin-top:25px;margin-left: 20px;">Live Now</p>
+       <p style="margin-top:30px;font-size: 10px;opacity: 0.5;">Streaming In YouTube</p>
+       <p style="margin-top:-13px;font-size: 25px;font-weight: 500;">{{cards[0].event_name}}</p>
+       <p style="margin-top:-13px;font-size: 14px;">Enjoy the experience with {{cards[0].influencer_name}}</p>
+       <button (click)="onSubmit()"  type="submit" class="btn btn-blue">Join Now</button>
+    </div>
+  </div>
+
+  <div style="background-color: #6011F5;border-radius: 6px;" class="gallery-cell">
+    <div class="container">
+      <img [src]="covers[0]" alt="Random first slide" style="height:250px; width: 110%;position: relative;left: -15px;">
+      <div class="top-right">
+        <div ng-if="(cards[1].product_images[2])">
+         <img src="{{base}}{{cards[1].product_images[2]}}" id="img_0">
+        </div>
+       <img  src="{{base}}{{cards[1].product_images[1]}}" id="img_1">
+       <img  src="{{base}}{{cards[1].product_images[0]}}" id="img_2">
+      </div>
+   </div>
+   <div class="lines">
+    <span class="dot"></span>
+    <p style="margin-top:25px;margin-left: 20px;">Live Now</p>
+    <p style="margin-top:30px;font-size: 10px;opacity: 0.5;">Streaming In YouTube</p>
+    <p style="margin-top:-13px;font-size: 25px;font-weight: 500;">{{cards[1].event_name}}</p>
+    <p style="margin-top:-13px;font-size: 14px;">Enjoy the experience with {{cards[1].influencer_name}}</p>
+    <button (click)="onSubmit()"  type="submit" class="btn btn-blue">Join Now</button>
+ </div>
+  </div>
+
+  <div style="background-color: #9B31DD;border-radius: 6px;" class="gallery-cell">
+    <div class="container">
+      <img [src]="covers[0]" alt="Random first slide" style="height:250px; width: 110%;position: relative;left: -15px;">
+      <div class="top-right">
+        <div ng-if="(cards[2].product_images[2])">
+         <img src="{{base}}{{cards[2].product_images[2]}}" id="img_0">
+        </div>
+       <img  src="{{base}}{{cards[2].product_images[1]}}" id="img_1">
+       <img  src="{{base}}{{cards[2].product_images[0]}}" id="img_2">
+      </div>
+   </div>
+   <div class="lines">
+    <span class="dot"></span>
+    <p style="margin-top:25px;margin-left: 20px;">Live Now</p>
+    <p style="margin-top:30px;font-size: 10px;opacity: 0.5;">Streaming In YouTube</p>
+    <p style="margin-top:-13px;font-size: 25px;font-weight: 500;">{{cards[2].event_name}}</p>
+    <p style="margin-top:-13px;font-size: 14px;">Enjoy the experience with {{cards[2].influencer_name}}</p>
+    <button (click)="onSubmit()"  type="submit" class="btn btn-blue">Join Now</button>
+   </div>
+  </div>
+
+ </div>
+
+</div>

@@ -1,0 +1,46 @@
+<!-- <p class="name">{{ login[0].title }}</p>
+
+
+<h1 [innerHTML]="xyz" [ngStyle]="{color:'green'}"></h1> -->
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text"  >
+            <img src="assets/mask.png" class="cover" style="height:100%;width: 100%;position: relative;"/>
+            <div class="centered"> 
+                <img src="assets/tvIcon.png" style="height:60px; width: 60px;position: relative; bottom:50px; right: 10px;"/>
+                <p>Welcome to influnencer's Streaming</p>
+                <h2>Let's<br>start your day <br> with a pleasant<br>smile!<br>...</h2>
+            </div>
+           
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-8 col-sm-12">
+             
+            <div class="login-form">
+                <h1 style="font-size: 30px;font: bold; color:#254059 ;font-weight: bold;">Sign In</h1>
+                <p style="font-size: 15px;font: bold; color:#254059 ;">Please sign in to your account.</p>
+               <form method="POST" >
+                  <div class="form-group">
+                     <label>User Name</label>
+                     <input type="text" class="form-control" placeholder="User Name">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <div style="position: relative;">
+                    <button (click)="onSubmit()" type="submit" class="btn btn-blue">Sign In <span style="font-size: 20px;position: absolute;right: 10px;top: 3px;">&#8594;</span></button>
+                  </div>
+               </form>
+               <p style="font-size: 15px;color:#6011F5;margin-top: 90px;text-align: center;" (click)="loginfunction()">Don't have an account? <b>Register </b> <span style="font-size: 22px;">&#8594;</span></p>
+               
+            </div>
+      </div>
+</div>

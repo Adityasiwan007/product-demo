@@ -1,0 +1,303 @@
+body {
+	height: 100%;
+	width: 100%;
+	background-color: #eff1f5;
+	/* margin-top: 90px;
+    height: 1500px;  */
+}
+
+/* #banner_body{
+        width: 50%;
+        height: 300px;
+        position: relative;
+        margin-top: 20px;
+        left:10%;
+      }
+
+
+    #activity_body{
+          background-color: teal;
+          top: 100px;
+          position: absolute;
+          right: 12%;
+          width: 25%;
+          height: 100%;
+      }
+
+      #card_body{
+        top: 400px;
+        position: absolute;
+        left:15%;
+        width: 40%;
+        height: 100%;
+    } */
+
+#banner_body {
+	width: 650px;
+	height: 300px;
+	position: relative;
+	margin-top: 20px;
+	left: 165px;
+}
+#statement {
+  font-size: 16px;
+  font-weight: 600;
+  color:#254059;
+  float: left;
+  line-height: 5px;
+  margin-left: 5px;
+}
+#activity_body {
+	top: 100px;
+	position: absolute;
+	left: 850px;
+	width: 350px;
+	height: 100%;
+}
+
+#card_body {
+	top: 400px;
+	position: absolute;
+	left: 230px;
+	width: 500px;
+	height: 100%;
+}
+
+/* for ACTIVITY style */
+
+#arrow {
+	width: 45PX;
+	height: 28px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/* button on Activity card after click*/
+.btn-green {
+	background-color: #cde6dc;
+	color: #608d7b;
+	text-align: left;
+	font-size: 14px;
+	border-radius: 4px;
+	border-color: #cde6dc;
+	padding-left: 20px;
+}
+
+.btnG {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 195px;
+}
+
+/* button on Activity card */
+.btn-white {
+	background-color: #6011f5;
+	color: white;
+	text-align: left;
+	font-size: 14px;
+	border-radius: 4px;
+	border-color: #6011f5;
+	padding-left: 20px;
+}
+
+.btnW {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 195px;
+}
+
+#about {
+	top: 260px;
+	padding: 20px;
+}
+
+#about_card_pic {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.btn-about {
+	color: #6011f5;
+	text-align: left;
+	font-size: 14px;
+	border-radius: 4px;
+	border-color: #6011f5;
+}
+
+.btnAbout {
+	width: 58px;
+	height: 29px;
+	position: absolute;
+	top: 48px;
+	right: 20px;
+}
+
+#attend {
+	top: 278px;
+	padding: 20px;
+}
+#works {
+	top: 300px;
+	padding: 20px;
+	height: 240px;
+}
+
+/* for banner style */
+
+.container_banner {
+	width: 100%;
+	height: 100%;
+}
+
+.top-right {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+}
+
+#img_0 {
+	width: 135px;
+	height: 245px;
+	position: absolute;
+	right: 265px;
+	top: 8px;
+	border-radius: 8px;
+}
+#img_1 {
+	width: 135px;
+	height: 245px;
+	position: absolute;
+	right: 120px;
+	top: 30px;
+	border-radius: 8px;
+}
+#img_2 {
+	width: 135px;
+	height: 245px;
+	position: absolute;
+	right: -25px;
+	top: 15px;
+	border-radius: 8px;
+}
+
+/* for text in banner */
+.lines {
+	width: 150PX;
+	position: absolute;
+	top: 0px;
+	left: 10%;
+	margin-top: 20%;
+	color: white;
+}
+
+/* for card style */
+
+.card {
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: white;
+	border-radius: 6px;
+}
+.card button:hover {
+	opacity: 0.7;
+}
+
+.row {
+	margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+	padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 25%;
+	margin: 1%;
+}
+
+/* Clear floats after rows */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* product time` design in card */
+#product_influ {
+	position: absolute;
+	bottom: 38px;
+	left: 85px;
+	margin-right: 10px;
+	font-size: 13px;
+	color: #97a5b2;
+}
+
+/* product icon pic` design in card */
+#card_pic {
+	position: absolute;
+	bottom: 50px;
+	left: 60px;
+	margin-right: 10px;
+	font-size: 13px;
+	color: #97a5b2;
+}
+
+/* product time` design in card */
+#product_time {
+	position: absolute;
+	bottom: 42px;
+	left: 60px;
+	margin-right: 10px;
+	font-size: 13px;
+	color: #97a5b2;
+}
+
+/* product name design in card */
+#product_name {
+	position: absolute;
+	bottom: 65px;
+	left: 60px;
+	margin-right: 10px;
+	font-size: 13px;
+	color: #254059;
+	line-height: 15px;
+}
+/* image banner on card view */
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+	right: 105px;
+	width: 20px;
+}
+.centered {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #254059;
+	left: 30px;
+	font-size: 10px;
+	font: bold;
+}
+
+/* button on product card */
+.btn-blue {
+	background-color: white;
+	color: #6011f5;
+	width: 100%;
+	text-align: left;
+	font-size: 14px;
+}
+
+.btn {
+	width: 100%;
+	height: 17%;
+}

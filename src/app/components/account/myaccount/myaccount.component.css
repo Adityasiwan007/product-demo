@@ -1,0 +1,25 @@
+.container {
+    margin-top: 33px;
+    margin-left: 207px;
+    width: 250px;
+    color: #254059;
+    padding: 0;
+}
+h1 {
+    font-size: 26px;
+}
+.sidenav {
+    margin-top: 30px;
+}
+nav a {
+    display:block;
+    text-decoration: none;
+    color: #8395A5;
+    font-size: 14px;
+    padding: 12px 5px 12px 19px;
+    cursor: pointer;
+}
+nav a:hover:not(.active) {
+    background-color: #DCE0EB;
+    color: #254059;
+}

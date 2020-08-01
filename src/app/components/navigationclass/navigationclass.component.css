@@ -1,0 +1,45 @@
+.nav-bar {
+    background-color: #ffffff;
+    background-size:cover ;
+    height: 52px;
+    position: relative;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+.nav-bar a {
+    color: #6011F5;
+    text-decoration: none;
+}
+.mat-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+}
+.flex-spacer {
+    flex-grow: 0.06;
+}
+.flex-spacer1 {
+    flex-grow: 0.33;
+}
+.flex-spacer2 {
+    flex-grow:0.5;
+}
+.flex-spacer3 {
+    padding-left: 20px;
+}

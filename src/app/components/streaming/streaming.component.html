@@ -1,0 +1,131 @@
+<body>
+    <app-navigationclass></app-navigationclass>
+
+       <iframe src="https://www.youtube.com/embed/DDU-rZs-Ic4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <img  src="assets/arrow.png" style="width:3%;height:30px;position: absolute;top:410px;left: 14%;" (click)="goHome()" />
+       <p style="position: absolute;top:445px;left: 14%;color: #254059;font-size: 25px;" >M&S Exclusive Highlighs</p>
+       <p style="position: absolute;top:475px;left: 14%;color: #254059;font-size: 17px;" >With <b>Zella Zebbo</b></p>
+
+       <div style="position: absolute;top:515px;left: 14%;width: 100%;">
+        <img  src="assets/youtube_icon.png" style="width: 24px;height: 17px;position: absolute;left: 0px;top: 2px;" />
+        <p style="position: absolute;left: 35px;color: #8395A5;font-size: 15px;" >Streaming in <b style="color: #254059;">Youtube</b></p>
+        <img  src="assets/like.png" style="width: 22px;height: 22px;position: absolute;left:200px;top:-3px" />
+        <p style="position: absolute;left: 230px;color: #8395A5;font-size: 15px;" >11K</p>
+
+        <img  src="assets/dislike.png" style="width: 22px;height: 22px;position: absolute;left:280px;top:3px" />
+        <p style="position: absolute;left: 310px;color: #8395A5;font-size: 15px;" >688</p>
+       </div>
+      
+
+    
+       <div id="card_body">
+        <p style="position: relative;top: 0px;left: 1%;color: #8395A5;font-size: 15px;">Inclucing Products</p>
+
+        <div class="column card" style="height:200px;width:330px;"  *ngFor="let image of images" data-toggle="modal" (click)="selInterest(image)" data-target="#exampleModalCenter" >
+            <img  [src]="image.img" style="width:30%;height:160px" />
+            <p id="product_name"><b>M&S Exclusive Today's Highlihts</b></p>
+            <p id="product_cost"><b>$35.00</b></p>
+            <p id="product_subcost"><s>$45.00</s></p>
+            <button id="try_btn" type="submit" class="btn btn-blue">Let's Try On</button>
+            <button id="bag_btn" type="submit" class="btn btn-blue" (click)='addToBag(image,$event)' click-stop-propagation>Add To Bag</button>
+            <svg id="line">
+                <line x1="0" y1="0" x2=100% y2="0" style="stroke:#EFF1F5;stroke-width:2" />
+            </svg>
+            <img  src="assets/heart.png" style="width: 16px;height: 14px;position: absolute;bottom:12px;right: 25px;" />
+            <p id="product_wishlist"><b>Add To Wishlist</b></p>
+
+        </div>
+
+    </div>
+
+
+    <!--Modal-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="flexdisp">
+        <div class="flexclose">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height: 18px; width: 18px;">
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="modal-body">
+          <div class="modalbody"><img [src]="interestname.img" /></div>
+          <div style="padding-left: 47px; padding-top: 37px;">
+          <div style="width: 467px;">
+              <label for="MSColl" class="labelmscoll">M&S Collection</label>
+              <div>
+                <label for="ProductName" class="labelMainProd">{{interestname.name}}</label>
+                <label for="prodcost" class="prodcost"><sup style="font-size: 60%;">$</sup>{{interestname.cost}}</label>
+                <label for="prodmrp" class="prodmrp">{{interestname.mrp}}</label>
+                <label for="addtowishlist" class="wishlist">Add to Wishlist<img src="../../../assets/images/wishlist-icon.svg" style="height: 17px; width: 19px; vertical-align: top; margin-left: 9px;"></label>
+              </div>
+              <div *ngFor="let i of [1,2,3,4,5]" class="rating">
+                <img *ngIf="checkRating(i,interestname)" src="../../../assets/images/ratedstar.svg" height="12px" width="14px">
+                <img *ngIf="!checkRating(i,interestname)" src="../../../assets/images/unratedstar.svg" height="12px" width="14px">
+              </div>
+              <div class="colornsize">
+                <div class="color">
+                  <label for="color" style="display: block;">Available Colors</label>
+                  <div *ngFor="let colors of interestname.color" style="display: inline-block; margin-right:7px;">
+                      <img (click)="selColor(colors)" src="../../../assets/images/{{colors}}.png" height="40px" width="40px">
+                      <img *ngIf="color_selected==colors" src="../../../assets/images/select-icon.svg" height="11px" width="14px" style="margin-left: -27px; margin-right: 13px;">
+                  </div>
+                </div>
+                <div class="size">
+                  <label for="size" style="display: block;">Select Sizes</label>
+                  <div *ngFor="let size of sizes" style="display: inline-block;">
+                    <div (click)="selSize(size)" [ngClass]="{selSizeButtons:isSelSize(size),sizeButtons:!isSelSize(size)}">
+                      <label class="sizedesc" >{{size}}</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary btn1" >
+                    <label style="display: block; margin: 0px;" >Would you like to have a try?</label>
+                    <label style="display: block; font:20px/24px Sofia Pro; margin: 0px;">Let’s Try On</label>
+                </button>
+                <button  class="btn btn-primary btn2" (click)='addToBag(interestname,$event)'>
+                    <label style="display: block; margin: 0px;" >Why are you waiting for?</label>
+                    <label style="display: block; font:20px/24px Sofia Pro; margin: 0px;">Add to Bag</label>
+                </button>
+              </div>
+          </div>
+          <label for="OtherProd" class="labelotherprod">Other Products</label>
+          <div *ngFor="let interest of images"> 
+              <div *ngIf="interest!=interestname" class="dispotherprod">
+                  <div class="othimg">
+                      <img src="{{interest.img}}" height="95px" width="91px"> 
+                  </div>
+                  <div class="othproddetails">
+                    <div style="display: block;">
+                      <label for="ProductName" class="othlabelMainProd">{{interest.name}}</label>
+                      <label for="prodcost" class="othprodcost"><sup style="font-size: 60%;">$</sup>{{interest.cost}}</label>
+                      <label for="prodmrp" class="othprodmrp">{{interest.mrp}}</label>
+                    </div>
+                    <div style="margin-top:9px;">
+                    <div style="float: left;">
+                      <div *ngFor="let colors of interest.color" style="display: inline-block; margin-right:-12px;">
+                        <img src="../../../assets/images/{{colors}}.png" height="24px" width="24px">
+                      </div>
+                    </div>
+                    <div style="float: right;">
+                      <div *ngFor="let i of [1,2,3,4,5]" class="rating">
+                        <img *ngIf="checkRating(i,interest)" src="../../../assets/images/ratedstar.svg" height="12px" width="14px">
+                        <img *ngIf="!checkRating(i,interest)" src="../../../assets/images/unratedstar.svg" height="12px" width="14px">
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <span style="margin-top: 26px;"></span>
+              </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</body>

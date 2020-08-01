@@ -1,0 +1,22 @@
+<body>
+    <app-navigationclass></app-navigationclass>
+
+     <div id="card_body">
+      <p style="color:#3C3C3C;margin-left: 8px;margin-top: 15px;font-size: 25px;"><b>Notifications</b></p>
+      <p style="margin-top: -38px;margin-left:170px;color: #97A5B2;" >{{images.length}} new updates<p>
+
+           <div class="column card" style="height:fit-content;;width:100%;"  *ngFor="let data of datas" >
+            <img  [src]="data.image" style="width:80px;height:70px;float: left;" />
+
+            <span class="dot"></span>
+            <p id="product_status">{{data.status}}</p>
+            <p id="product_name">{{data.name}}</p>
+            <p id="product_days">{{data.day}}</p>
+              <!-- <img  [src]="image" style="width:100%;height:160px;" />
+
+              <p id="product_id">ID #3453554</p>
+              <p id="product_name">Pure Cotton Polka Dot Regular Fit T-Shirt</p> -->
+          </div>
+    </div>
+
+</body>

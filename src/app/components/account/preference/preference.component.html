@@ -1,0 +1,29 @@
+<div>
+    <app-navigationclass></app-navigationclass>
+</div>
+<!-- Code inside this block -->
+<div class="test-body">
+
+    <app-myaccount></app-myaccount>
+    <div class="container">
+        <div>
+            <span class="_moveleft">
+                <h2>Preferences</h2>
+                <div class="flex-spacer"></div>
+            </span>
+            <span class="nav">
+                <a routerLink="/preference" mat-button>Interest</a>
+                <a routerLink="/artist-preference" mat-button>Artist</a>
+            </span>
+        </div>
+        <div class="disp">
+            <div *ngFor="let name of interests">
+                <span>
+                    <img src="../../../../assets/images/{{name}}.svg" height="33px" width="32px">
+                    <p style="margin-top: 11px;">{{name}}</p>
+                    <button type="button" class="btn btn-primary">Follow</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

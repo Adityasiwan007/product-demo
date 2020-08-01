@@ -1,0 +1,18 @@
+<body>
+    <app-navigationclass></app-navigationclass>
+
+     <div id="card_body">
+      <p style="color:#3C3C3C;margin-left: 8px;top: 3px;margin-top: 15px;font-size: 25px;"><b>My Orders</b></p>
+      <p style="position: absolute;top: 11px;left:150px;color: #97A5B2;" >{{images.length}} Products</p>
+
+           <div class="column card" style="height:280px;width:240px;"  *ngFor="let image of images" >
+              <img  [src]="image" style="width:100%;height:160px;" />
+
+              <p id="product_id">ID #3453554</p>
+              <p id="product_name">Pure Cotton Polka Dot Regular Fit T-Shirt</p>
+              <img src="assets/order_dots.png" width="15" height="5" style="position: absolute;right: 15px;bottom: 90px;">
+              <button  (click)="onSubmit()" type="submit" class="btn btn-blue">Order received</button>
+          </div>
+    </div>
+
+</body>

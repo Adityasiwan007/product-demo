@@ -1,0 +1,32 @@
+
+<div>
+    <app-navigationclass></app-navigationclass>
+</div>
+<!-- Code inside this block -->
+<div class="test-body">
+
+    <app-myaccount></app-myaccount>
+    <div class="container">
+        <div>
+            <span class="_moveleft">
+                <h2>Saved Cards<span class="styl">Found {{no_of_cards}} cards</span></h2>
+            </span>
+            <span class="_moveright">
+                <button type="button" class="btn btn-primary">Add New +</button>
+            </span>
+        </div>
+        <div class="disp">
+            <div *ngFor="let detail of carddetails">
+                <span class="rightcorner">
+                    <img src="../../../../assets/images/dotedit.svg">
+                </span>
+                <span class="cardcontent">
+                    <p style="font-size: 15px;">XXXX XXXX XXXX {{detail[0]}}</p>
+                    <p style="font-size: 16px;">{{detail[1]}}</p>
+                    <p style="font-size: 14px;margin-top: 27px;">{{detail[2]}}</p>
+                </span>
+                <button type="button" class="btn btn-primary">Set as Default</button>
+            </div>
+        </div>
+    </div>
+</div>

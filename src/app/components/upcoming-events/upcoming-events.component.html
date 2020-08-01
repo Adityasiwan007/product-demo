@@ -1,0 +1,36 @@
+<body>
+  <app-navigationclass></app-navigationclass>
+    <app-carousel></app-carousel>
+    <!-- <p>{{login[1].title}}</p> -->
+
+
+   
+
+     <div id="card_body">
+
+      <img  src="assets/live_event.png" style="width:18px;height:17px;position: absolute;top: 4px;left: 120px;"/>
+
+      <a style="top: 0px;color:#AAAAAA;margin-left: 8px;" routerLink="/home">Live Events</a>
+      <!-- <p style="top: 0px;color:#AAAAAA;margin-left: 8px;" (click)="goHome()">Live Events</p> -->
+      <p style="margin-top: -23px;margin-left:143px;color: #E63689;"><b>Upcoming Events</b></p>
+      <p style="position: absolute;top: 0px;right:36px;color: #8190A0;">Filters</p>
+      <img  src="assets/filter_pic.png" style="width:12px;height:10px;position: absolute;top: 8px;right:20px;"/>
+
+            <div class="column card" style="height:280px;width:240px;"  *ngFor="let card of cards" >
+              <div class="crop">
+                <img  src="{{base}}{{card.product_images[0]}}"/>
+              </div>
+              <div class="container">
+                <img  src="assets/banner.png" style="width:30px;height:85px;" />
+                <div class="centered"><b>{{card.date}}<br>{{card.month}}</b><br>{{card.day}}</div>
+              </div>
+              <p id="product_name"><b>{{card.event_name}}</b></p>
+              <p id="product_time">{{card.timeStart}} - {{card.timeEnd}}</p>
+              <img  src="assets/pic.png" style="width:20px;height:20px;" id="card_pic" />
+              <p id="product_influ">By {{card.influencer_name}}</p>
+              <!-- <button  (click)="onSubmit()" type="submit" class="btn btn-blue"><b>Add To Calendar</b> <img  src="assets/blue_arrow.png" style="width:25px;height:15px;position: absolute;right: 20px;bottom: 15px;" /></button> -->
+              <button  (click)="onSubmit()" type="submit" class="btn btn-blue"><b>Register</b> <img  src="assets/blue_arrow.png" style="width:25px;height:15px;position: absolute;right: 20px;bottom: 15px;" /></button>
+            </div>
+    </div>
+
+</body>

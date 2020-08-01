@@ -1,0 +1,83 @@
+ #carosal_div
+  {
+   background-color: #EFF1F5;
+   padding-top: 10px;
+   padding-bottom: 10px;
+  }
+
+  .flickity-page-dots { bottom: 10px; }
+
+  .gallery-cell {
+    width: 66%;
+    margin-right: 10px;
+    background: #8C8;
+  }
+
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  #img_0{
+    width:120px;
+    height:200px;
+    position: absolute;
+    right:280px;
+    top:10px;
+    border-radius: 6px;
+  }
+  #img_1{
+    width:120px;
+    height:200px;
+    position: absolute;
+    right:150px;
+    top:30px;
+    border-radius: 6px;
+  }
+  #img_2{
+    width:120px;
+    height:200px;
+    position: absolute;
+    right:20px;
+    top:10px;
+    border-radius: 6px;
+  }
+
+  .lines{
+      position: absolute;
+      top: 0px;
+      left: 7%;
+      margin-right: 50%;
+      color: white;
+  }
+
+    /* button on product card */
+    .btn-blue{
+        border: 2px solid white;
+        color: white;
+        width: 100%; 
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .btn{
+        width: 95px;
+        height:35px;
+    }
+    .dot {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        background-color: #E63689;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top:30px;
+      }

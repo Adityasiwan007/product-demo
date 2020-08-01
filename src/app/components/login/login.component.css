@@ -1,0 +1,74 @@
+
+
+  /* .name {
+   color: blue;
+  } */
+  body, html {
+    height: 100%;
+  }
+.sidenav {
+    height: 100%;
+    background-color: blue;
+    background-image: linear-gradient(to bottom left, #E73689 ,#7E03D5 );
+    overflow-x: hidden;
+}
+
+
+.main {
+    padding: 0px 0px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 60%; 
+    }
+
+    .sidenav{
+        width: 55%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        padding-top: 45%;
+    }
+
+}
+
+
+.login-main-text{
+    color: #fff;
+    font-size: small;
+    position: relative;
+    text-align: left;
+    height:100%; 
+}
+
+.login-main-text h2{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.btn-blue{
+    background-color: #00008b !important;
+    color: #fff;
+    width: 100%; 
+    height: 20%;
+    text-align: left;
+}
+
+.btn{
+    width: 100%; 
+    height: 20%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }

@@ -1,0 +1,57 @@
+.test-body {
+    padding-top: 60px;
+    display:flex;
+    margin: 0px;
+}
+.container {
+    margin-top: 33px;
+    margin-left: 73px;
+    flex:1;
+    color: #254059;
+    padding: 0px;
+}
+h2  {
+    font-size: 18px;
+}
+._moveleft {
+    float:left;
+}
+.flex-spacer {
+    margin-left: 144px;;
+}
+.nav a {
+    color:#AAAAAA;
+    text-decoration: none;
+    font-size: 14px;
+}
+.disp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin-top: 26px;
+}
+.disp div {
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 165px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    box-shadow: 0px 1px 0px #D9D9D9;
+    border-radius: 3px;
+}
+.disp span {
+    display: block;
+    margin-top: 32px;
+    font-size: 12px;
+    color: #254059;
+    text-align: center;
+}
+.disp .btn {
+    background-color: #FFFFFF;
+    border-color: #6011f5;
+    border-radius: 3px;
+    color:#6011f5;
+    font-size: 12px;
+    width: 88px;
+    height: 29px;
+}

@@ -1,0 +1,13 @@
+<mat-toolbar class="nav-bar">
+    <div  class="flex-spacer"></div>
+    <a routerLink="/home" mat-button>Home</a>
+    <a routerLink="/events" mat-button >Events</a>
+    <a mat-button routerLink="/bags">Bag</a>
+    <a mat-button routerLink="/order">Orders</a>
+    <div  class="flex-spacer1"></div>
+    <span (click)="stream()" ><img height="52px" src="../../../assets/images/livetv-icon.svg"></span>
+    <div  class="flex-spacer2"></div>
+    <a routerLink="/notification"><span><img src="../../../assets/images/notification.svg" style="height: 20px;width: 20px;"></span></a>
+    <div  class="flex-spacer3"></div>
+    <a routerLink="/contactdetails"><span><img src="../../../assets/images/login-face-icon.svg" ></span></a>
+</mat-toolbar>

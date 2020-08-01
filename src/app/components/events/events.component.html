@@ -1,0 +1,40 @@
+
+<body>
+    <app-navigationclass></app-navigationclass>
+
+    <div id="banner_body"> 
+        <app-calendar></app-calendar>
+    </div>
+    
+    
+    
+    <div id="activity_body">
+        <div class="card" style="height:180px;width:100%;background-color: #F5A611;">
+            <img src="assets/2_mask.png" alt="Random first slide" style="height:100%;width: 100%;position: relative;">
+            <div class="lines">
+                <span class="dot"></span>
+                <p style="margin-top:18px;margin-left: 15px;font-size: 12px;">Live Now</p>
+                <p style="margin-top:15px;font-size: 12px;opacity: 0.5;">Streaming In YouTube</p>
+                <p style="margin-top:-12px;font-size: 20px;font-weight: 500;">M&S Exclusive Highlights!</p>
+                <p style="margin-top:-17px;font-size: 12px;">Enjoy the experience with Zoella Zeebo</p>
+                <button (click)="onSubmit()"  type="submit" class="btn btn-blue">Join Now</button>
+             </div>
+        </div>
+        <!-- <app-carousel-events></app-carousel-events> -->
+
+        <div class="card" style="height:auto;width:100%;background-color: white;margin-bottom: 20px;margin-top: 20px;">
+            <p style="color: #3C3C3C;font-weight: 600;font-size: 18px;float: left;line-height: 0px;margin: 20px;">Upcoming Events</p>
+            <div class="column card" style="height:170px;width:260px;margin-left:70px;margin-top: 5px;margin-bottom: 5px;background-color: #E3EFFF;"  *ngFor="let image of images" >
+                <p id="product_name">M&S Exclusive Today's Highlihts!</p>
+                <img src="assets/order_dots.png" width="15" height="5" style="position: absolute;top:19px;right: 8%;">
+                <p id="product_time">10.10 am - 10.30 am</p>
+                <img  src="assets/pic.png" style="width:20px;height:20px;" id="card_pic" />
+                <p id="product_influ">by Zoella Zeebo</p>
+                <p id="product_in">in</p>
+                <img  src="assets/youtube_icon.png" style="width: 22px;height: 15px;position: absolute;right: 8%;top: 89px;" />
+                <button id="try_btn" type="submit" class="btn btn-blue">Register</button>
+    
+            </div>
+        </div>
+    </div>
+</body>

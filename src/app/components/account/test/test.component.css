@@ -1,0 +1,54 @@
+.test-body {
+    padding-top: 60px;
+    display:flex;
+    margin: 0px;
+}
+.container {
+    margin-top: 33px;
+    margin-left: 73px;
+    flex:1;
+    color: #254059;
+    padding: 0px;
+}
+h2  {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+    color: #8395A5;
+}
+.block {
+    background: transparent url('../../../../assets/images/bgMaskGroup12.png') 0% 0% no-repeat padding-box;
+    height: 138px;
+    width: 630px;
+    background-color:rgb(227, 239, 255);
+    padding-left: 38px;
+    box-shadow: 0px 1px 0px #D9D9D9;
+    border-radius: 3px; 
+}
+.block1 {
+    background-color: white;
+    margin-right:206px;
+    padding: 29px;
+    box-shadow: 0px 1px 0px #D9D9D9;
+    border-radius: 3px; 
+}
+.form-group {
+    display: block;
+    border: 1px solid;
+    border-color: #E1E4ED;
+    padding: 17px;
+}
+input {
+    border: none;
+}
+.btn {
+    font-size: 14px;
+    background-color: #6011f5;
+}
+.btn1{
+    font-size: 14px;
+    color: #6011f5;
+    background-color: #ffffff;
+    border: none;
+}

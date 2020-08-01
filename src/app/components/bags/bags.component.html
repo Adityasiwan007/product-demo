@@ -1,0 +1,57 @@
+<body>
+    <app-navigationclass></app-navigationclass>
+
+   
+    
+    <div id="card_body">
+        <p style="color:#3C3C3C;margin-left: 8px;top: 3px;margin-top: 15px;font-size: 25px;"><b>My Bag</b></p>
+        <p style="position: absolute;top: 11px;left:110px;color: #97A5B2;" >{{Ordercards.length}} Products in your bag</p>
+  
+
+            <div class="column card" style="height:164px;width:100%;"  *ngFor="let Ordercard of Ordercards" >
+                <p id="product_name">Pure Cotton Polka Dot Regular Fit T-Shirt</p>
+                <img  src="assets/pic.png" style="width:35px;height:35px;" id="card_pic" />
+                <p id="product_from_text">Bought it from</p>
+                <p id="product_from_name">Zoella Zeebo</p>
+                <button  (click)="onSubmit()" type="submit" class="btn btn-blue"><p style="color:#97A5B2;font-size: 12px;">Coupon Code <b style="color:#3C3C3C;font-size: 14px;">JOJUNE05</b></p></button>
+                <span (click)="sub(Ordercard.id)" style="font-size:30px;position: absolute;top: 10px;right: 115px;color: #97A5B2;">&#8722;</span>
+                <p id="pro_quant">Qty {{Ordercard.count}}</p>
+                <span (click)="add(Ordercard.id)" style="font-size:25px;position: absolute;top: 13px;right: 30px;color: #97A5B2;">&#43;</span>
+                <p id="product_cost"><b>${{Ordercard.newCost}}.00</b></p>
+                <p id="product_subcost"><s>${{Ordercard.subCost}}.00</s></p>
+            </div>
+
+
+            <div id="banner_body" class="column"> 
+                <p style="color:#8395A5;margin-left: 0px;top: 3px;margin-top: 15px;font-size: 20px;"><b>From your Wishlist</b></p>
+                <div class="column1 card1" style="height:260px;width:220px;"  *ngFor="let wish of wishes" >
+                    <img  [src]="wish" style="width:100%;height:160px;" />
+                    <p id="product_name_down">Pure Cotton Polka Dot Regular Fit T-Shirt</p>
+                    <img src="assets/order_dots.png" width="15" height="5" style="margin-top: -37px;float:right;margin-right: 10px;">
+                    <p id="product_cost_down"><b>$35.00</b></p>
+                    <p id="product_subcost_down"><s>$45.00</s></p>
+                </div>
+            </div>
+    </div>
+    
+    <div id="activity_body">
+        <p style="color:#254059;margin-left: 0px;top: 3px;margin-top: -20px;font-size: 20px;"><b>Summary</b></p>
+        <p style="color:#254059;position: absolute;font-size: 15px;left: 0;top: 30px;">Sub Total</p>  <p style="color:#254059;position: absolute;font-size: 15px;right: 0;top: 30px;">${{subTotal.toFixed(2)}}</p>
+        <p style="color:#254059;position: absolute;font-size: 15px;left: 0;top: 60px;">Discount applied</p>  <p style="color:#254059;position: absolute;font-size: 15px;right: 0;top: 60px;">${{(subTotal-total).toFixed(2)}}</p>
+        <p style="color:#254059;position: absolute;font-size: 20px;left: 0;top: 100px;">Grand Total</p>  <p style="color:#254059;position: absolute;font-size: 20px;right: 0;top: 100px;"><b>${{total.toFixed(2)}}</b></p>
+        <p style="color:#E63689;position: absolute;font-size: 10px;right: 0;top: 130px;">You saved $10.00</p>
+        <div class="card" style="height:54px;width:100%;margin-top: 170px;padding: 16px;">
+            <p style="color:#254059;font-size: 15px;">Select your delivery address</p>
+            <img  src="assets/address_icon.png" style="width:30px;height:25px;position: absolute;right: 16px;top:14px" >
+        </div>
+        <div class="card" style="height:54px;width:100%;margin-top: 20px;padding: 16px;">
+            <p style="color:#254059;font-size: 15px;">Select your card</p>
+            <img  src="assets/work_radio.png" style="width:30px;height:25px;position: absolute;right: 16px;top:14px" >
+        </div>
+
+        <div class="card" style="height:54px;width:100%;margin-top: 20px;padding: 16px;background-color: #6011F5;" (click)="goThankyou()">
+            <p style="color:white;font-size: 15px;">Proceed to Pay</p>
+            <img  src="assets/white_arrow.png" style="width:25px;height:15px;position: absolute;right: 16px;top:20px" >
+        </div>
+    </div>
+</body>

@@ -1,0 +1,74 @@
+.test-body {
+    padding-top: 60px;
+    display:flex;
+    margin: 0px;
+}
+.container {
+    margin-top: 33px;
+    margin-left: 73px;
+    flex:1;
+    color: #254059;
+    padding: 0px;
+}
+h2  {
+    font-size: 18px;
+}
+._moveleft {
+    float: left;
+}
+._moveright {
+    float:right;
+    cursor:pointer;
+    margin-right: 207px;
+}
+.styl {
+    font-size: 12px;
+    color: #97A5B2;
+    font: Light 12px/15px Sofia Pro;
+    padding-left: 12px;
+}
+._moveright .btn {
+    font-size: 13px;
+    background-color: #6011f5;
+}
+.disp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin-top: 61px;
+}
+.disp div {
+    background-image: url('../../../../assets/images/card.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 39px;
+    background-color: #FFFFFF;
+    width: 310px;
+    height: 267px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding:20px;  
+    box-shadow: 0px 1px 0px #D9D9D9;
+    border-radius: 3px; 
+}
+.disp .cardcontent {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 62px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font: Regular 14px/20px Sofia Pro;
+}
+.disp .btn {
+    margin-top: 21px;
+    background-color: #FFFFFF;
+    border-color: #6011f5;
+    color:#6011f5;
+    font-size: 12px;
+    width: 270px;
+    height: 33px;
+}
+.disp .rightcorner {
+    float: right;
+    opacity: 0.54;
+    margin-top: -10px;
+}
