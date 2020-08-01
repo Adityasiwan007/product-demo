@@ -28,6 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Demo working:
-<img src="demo/2.png" width="300"> <img src="demo/1.png" width="300"> <img src="demo/3.png" width="300"> <img src="demo/4.png" width="300"><img src="demo/11.png" width="300"> <img src="demo/5.png" width="300">
-<img src="demo/6.png" width="300"> <img src="demo/7.png" width="300"> <img src="demo/8.png" width="300"> <img src="demo/9.png" width="300"> <img src="demo/10.png" width="300">
+<img src="demo/2.png" width="500"> <img src="demo/1.png" width="500"> <img src="demo/3.png" width="500"> <img src="demo/4.png" width="500"><img src="demo/11.png" width="500"> <img src="demo/5.png" width="500">
+<img src="demo/6.png" width="500"> <img src="demo/7.png" width="500"> <img src="demo/8.png" width="500"> <img src="demo/9.png" width="500"> <img src="demo/10.png" width="500">
 <br />
